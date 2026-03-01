@@ -1,417 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- =============================================
-       SEO Meta Tags
-  ============================================== -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="The Stationery Hub – Your trusted store for school and office stationery in Baguiati, Kolkata. Wholesale and retail pricing available." />
-  <meta name="keywords" content="stationery, school supplies, office supplies, notebooks, pens, files, Baguiati, Kolkata, wholesale stationery, retail stationery" />
-  <meta name="author" content="The Stationery Hub" />
-  <meta property="og:title" content="The Stationery Hub – School & Office Stationery" />
-  <meta property="og:description" content="Complete range of school and office stationery at affordable wholesale and retail prices." />
-  <meta property="og:type" content="website" />
-  <title>The Stationery Hub – School &amp; Office Stationery, Kolkata</title>
+  <meta charset="UTF-8">
+  <title>The Stationery Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+    }
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css" />
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .hero-content {
+      max-width: 520px;
+    }
+
+    .hero-content h1 {
+      font-size: 42px;
+      color: #1f2937;
+    }
+
+    .hero-content p {
+      font-size: 16px;
+      color: #4b5563;
+      line-height: 1.6;
+    }
+
+    .hero-image {
+      max-width: 420px;
+    }
+
+    .hero-image img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-  <!-- =============================================
-       NAVIGATION / HEADER
-  ============================================== -->
-  <header class="site-header" id="top">
-    <nav class="navbar">
-      <!-- Logo -->
-      <a href="#top" class="nav-logo">
-        <span class="logo-icon">✒</span>
-        <span class="logo-text">The Stationery <em>Hub</em></span>
-      </a>
-
-      <!-- Desktop Navigation Links -->
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#why-us">Why Us</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="tel:8017586675" class="nav-cta">Call Now</a></li>
-      </ul>
-
-      <!-- Hamburger Button (Mobile) -->
-      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </nav>
-  </header>
-
-  <main>
-
-    <!-- =============================================
-         HERO SECTION
-    ============================================== -->
-    <section class="hero" id="hero">
-      <!-- Decorative background blobs -->
-      <div class="blob blob-1"></div>
-      <div class="blob blob-2"></div>
-      <div class="blob blob-3"></div>
-
-      <!-- Floating stationery illustrations -->
-      <div class="float-item fi-1">📒</div>
-      <div class="float-item fi-2">✏️</div>
-      <div class="float-item fi-3">📐</div>
-      <div class="float-item fi-4">🖊️</div>
-      <div class="float-item fi-5">📎</div>
-
-      <div class="hero-content">
-        <span class="hero-badge">Kolkata's Trusted Stationery Store</span>
-        <h1 class="hero-title">
-          Your Complete<br />
-          <span class="highlight">Stationery</span> Solution
-        </h1>
-        <p class="hero-tagline">"Your Trusted Store for School &amp; Office Stationery"</p>
-        <p class="hero-desc">
-          We provide a complete range of school and office stationery items at affordable
-          wholesale and retail prices. Serving students, offices, and institutions across Kolkata.
-        </p>
-        <div class="hero-buttons">
-          <a href="tel:8017586675" class="btn btn-primary">
-            <span class="btn-icon">📞</span> Call Now
-          </a>
-          <a href="#contact" class="btn btn-outline">
-            <span class="btn-icon">📍</span> Visit Our Store
-          </a>
-        </div>
-      </div>
-
-      <!-- Decorative card -->
-      <div class="hero-card">
-        <div class="hero-card-inner">
-          <div class="card-row"><span>📚</span><p>School Supplies</p></div>
-          <div class="card-row"><span>🗂️</span><p>Office Files</p></div>
-          <div class="card-row"><span>🎨</span><p>Art &amp; Craft</p></div>
-          <div class="card-row"><span>🛒</span><p>Wholesale Rates</p></div>
-        </div>
-      </div>
-
-      <!-- Scroll cue -->
-      <div class="scroll-cue">
-        <span>Scroll to explore</span>
-        <div class="scroll-arrow"></div>
-      </div>
-    </section>
-
-    <!-- =============================================
-         ABOUT SECTION
-    ============================================== -->
-    <section class="about section-pad" id="about">
-      <div class="container">
-        <div class="about-grid">
-
-          <!-- Illustration side -->
-          <div class="about-visual" aria-hidden="true">
-            <div class="about-illus-wrap">
-              <div class="illus-circle"></div>
-              <div class="illus-items">
-                <div class="illus-item">📓</div>
-                <div class="illus-item">🖊️</div>
-                <div class="illus-item">📏</div>
-                <div class="illus-item">✂️</div>
-                <div class="illus-item">📌</div>
-                <div class="illus-item">🗂️</div>
-              </div>
-              <div class="illus-badge">
-                <span class="illus-badge-num">10+</span>
-                <span>Years of Trust</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Text side -->
-          <div class="about-text">
-            <span class="section-label">About Us</span>
-            <h2 class="section-title">A Store Built on <span class="highlight">Trust &amp; Quality</span></h2>
-            <p>
-              <strong>The Stationery Hub</strong> is a trusted stationery store offering high-quality
-              school and office supplies. We serve students, offices, institutions, and businesses with
-              both retail and wholesale options. Our goal is to make premium stationery accessible to
-              everyone at fair prices.
-            </p>
-            <p>
-              Located in the heart of Baguiati, Kolkata, we have built lasting relationships with our
-              customers through consistent quality, honest pricing, and friendly service.
-            </p>
-
-            <!-- GST Badge -->
-            <div class="gst-badge">
-              <span class="gst-icon">🏛️</span>
-              <div>
-                <span class="gst-label">GST Registered Business</span>
-                <span class="gst-number">GST: 19GEGPM7955N1ZF</span>
-              </div>
-            </div>
-
-            <div class="about-stats">
-              <div class="stat">
-                <span class="stat-num">500+</span>
-                <span class="stat-label">Products</span>
-              </div>
-              <div class="stat">
-                <span class="stat-num">1000+</span>
-                <span class="stat-label">Happy Customers</span>
-              </div>
-              <div class="stat">
-                <span class="stat-num">B2B &amp; B2C</span>
-                <span class="stat-label">Wholesale &amp; Retail</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =============================================
-         PRODUCTS & SERVICES SECTION
-    ============================================== -->
-    <section class="products section-pad" id="products">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">What We Offer</span>
-          <h2 class="section-title">Products &amp; <span class="highlight">Services</span></h2>
-          <p class="section-sub">Everything you need for school, college, and office – all under one roof.</p>
-        </div>
-
-        <div class="products-grid">
-
-          <article class="product-card">
-            <div class="pc-icon">📒</div>
-            <h3>School Notebooks &amp; Copies</h3>
-            <p>Single-line, four-line, squared, and project notebooks for all grades and subjects.</p>
-            <div class="pc-tag">School Supplies</div>
-          </article>
-
-          <article class="product-card">
-            <div class="pc-icon">🖊️</div>
-            <h3>Pens, Pencils &amp; Markers</h3>
-            <p>Ball pens, gel pens, HB pencils, colour pencils, sketch pens and highlighters.</p>
-            <div class="pc-tag">Writing Tools</div>
-          </article>
-
-          <article class="product-card">
-            <div class="pc-icon">🗂️</div>
-            <h3>Office Files &amp; Register Copies</h3>
-            <p>Ring binders, L-folders, register copies, punch files, and expanding files.</p>
-            <div class="pc-tag">Office Supplies</div>
-          </article>
-
-          <article class="product-card">
-            <div class="pc-icon">🎨</div>
-            <h3>Art &amp; Craft Materials</h3>
-            <p>Watercolours, drawing sheets, poster colours, glitter, origami paper and more.</p>
-            <div class="pc-tag">Creative Supplies</div>
-          </article>
-
-          <article class="product-card">
-            <div class="pc-icon">📝</div>
-            <h3>Exam Pads &amp; Project Supplies</h3>
-            <p>Exam pads, science project kits, chart papers, rulers, protractors, and compasses.</p>
-            <div class="pc-tag">Exam Essentials</div>
-          </article>
-
-          <article class="product-card product-card--accent">
-            <div class="pc-icon">🛒</div>
-            <h3>Wholesale &amp; Retail Sales</h3>
-            <p>Special bulk pricing for schools, colleges, offices, and institutions. Contact us for a quote!</p>
-            <div class="pc-tag">Best Rates</div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- =============================================
-         WHY CHOOSE US SECTION
-    ============================================== -->
-    <section class="why-us section-pad" id="why-us">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">Our Strengths</span>
-          <h2 class="section-title">Why Choose <span class="highlight">Us?</span></h2>
-        </div>
-
-        <div class="why-grid">
-
-          <div class="why-card">
-            <div class="why-icon">🏆</div>
-            <h3>High-Quality Products</h3>
-            <p>We source from reputed manufacturers ensuring every product meets quality standards your family and business can rely on.</p>
-          </div>
-
-          <div class="why-card">
-            <div class="why-icon">💰</div>
-            <h3>Affordable Pricing</h3>
-            <p>Competitive retail prices and attractive wholesale rates mean you always get the best value for money.</p>
-          </div>
-
-          <div class="why-card">
-            <div class="why-icon">🤝</div>
-            <h3>Reliable &amp; Trusted Service</h3>
-            <p>Years of serving Kolkata's students and businesses with honesty and dedication. We believe every customer deserves the best experience.</p>
-          </div>
-
-          <div class="why-card">
-            <div class="why-icon">📦</div>
-            <h3>Wide Product Range</h3>
-            <p>From basic stationery to specialty art supplies, our comprehensive catalogue means you never have to shop elsewhere.</p>
-          </div>
-
-          <div class="why-card">
-            <div class="why-icon">🏫</div>
-            <h3>Institutional Supply</h3>
-            <p>Dedicated support for schools, colleges, coaching centres, and corporate offices with timely delivery options.</p>
-          </div>
-
-          <div class="why-card">
-            <div class="why-icon">🔄</div>
-            <h3>Both Retail &amp; Wholesale</h3>
-            <p>Whether you need one notebook or a thousand, we serve individual customers and bulk buyers with equal care.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- =============================================
-         CONTACT SECTION
-    ============================================== -->
-    <section class="contact section-pad" id="contact">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">Find Us</span>
-          <h2 class="section-title">Get in <span class="highlight">Touch</span></h2>
-          <p class="section-sub">Visit us in store or give us a call – we're always happy to help.</p>
-        </div>
-
-        <div class="contact-grid">
-
-          <!-- Contact Info Cards -->
-          <div class="contact-info">
-
-            <div class="contact-card">
-              <div class="cc-icon">📞</div>
-              <div class="cc-body">
-                <h3>Call Us</h3>
-                <a href="tel:8017586675" class="phone-link">+91 80175 86675</a>
-                <a href="tel:9875539992" class="phone-link">+91 98755 39992</a>
-              </div>
-            </div>
-
-            <div class="contact-card">
-              <div class="cc-icon">📍</div>
-              <div class="cc-body">
-                <h3>Store Address</h3>
-                <address>
-                  FC-68, Narayantala West,<br />
-                  Baguiati, Kolkata – 700059,<br />
-                  West Bengal, India
-                </address>
-              </div>
-            </div>
-
-            <div class="contact-card">
-              <div class="cc-icon">🕐</div>
-              <div class="cc-body">
-                <h3>Store Hours</h3>
-                <p>Monday – Saturday: 9 AM – 8 PM</p>
-                <p>Sunday: 10 AM – 5 PM</p>
-              </div>
-            </div>
-
-            <!-- CTA Buttons -->
-            <div class="contact-cta-group">
-              <a href="tel:8017586675" class="btn btn-primary btn-full">📞 Call: 80175 86675</a>
-              <a href="tel:9875539992" class="btn btn-outline btn-full">📞 Call: 98755 39992</a>
-            </div>
-          </div>
-
-          <!-- Map Embed -->
-          <div class="contact-map">
-            <div class="map-wrapper">
-              <!-- Google Maps embed for Baguiati, Kolkata area -->
-              <iframe
-                title="The Stationery Hub Location – Baguiati, Kolkata"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14727.714866437086!2d88.39786!3d22.62200!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89e7000000001%3A0x0!2sBaguiati%2C%20Kolkata%2C%20West%20Bengal%20700059!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                width="100%"
-                height="100%"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-              </iframe>
-            </div>
-            <div class="map-label">
-              <span>📍 FC-68, Narayantala West, Baguiati, Kolkata – 700059</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- =============================================
-       FOOTER
-  ============================================== -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-
-        <div class="footer-brand">
-          <span class="logo-icon">✒</span>
-          <span class="logo-text">The Stationery <em>Hub</em></span>
-          <p>Your trusted partner for all stationery needs – quality, affordability, and reliability combined.</p>
-          <p class="footer-gst">GST: 19GEGPM7955N1ZF</p>
-        </div>
-
-        <div class="footer-contact">
-          <h4>Contact Us</h4>
-          <a href="tel:8017586675">📞 +91 80175 86675</a>
-          <a href="tel:9875539992">📞 +91 98755 39992</a>
-          <address>
-            📍 FC-68, Narayantala West,<br />
-            Baguiati, Kolkata – 700059
-          </address>
-        </div>
-
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#why-us">Why Choose Us</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="footer-bottom">
-        <p>© 2026 The Stationery Hub. All rights reserved.</p>
-        <p>Designed with ❤️ for Kolkata's stationery lovers.</p>
-      </div>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>The Stationery Hub</h1>
+      <p>
+        Your trusted store for school and office stationery.
+        Wholesale and retail supplies available at affordable prices.
+      </p>
     </div>
-  </footer>
 
-  <!-- JavaScript -->
-  <script src="script.js"></script>
+    <!-- HERO IMAGE FROM GOOGLE DRIVE -->
+    <div class="hero-image">
+      <img 
+        src="https://drive.google.com/uc?export=view&id=1Z913u3kgSJgZDCDs8YKR1XLRMTm6Hy9w"
+        alt="The Stationery Hub Store">
+    </div>
+  </section>
+
 </body>
 </html>
